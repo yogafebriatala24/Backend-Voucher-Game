@@ -25,16 +25,14 @@
             />
           </li>
         </ul>
-      </td>
-      <td>
         <%= transaction[i]?.historyVoucherTopup?.gameName %>
         <br />
         <%= transaction[i]?.historyVoucherTopup?.category %>
       </td>
+
       <td>
-        <%= transaction[i]?.historyVoucherTopup?.coinQuantity %>
-        <br />
-        <%= transaction[i]?.historyVoucherTopup?.coinName %>
+        <%= transaction[i]?.historyVoucherTopup?.coinQuantity %> <%=
+        transaction[i]?.historyVoucherTopup?.coinName %>
       </td>
       <td><%= transaction[i].value %></td>
       <td>
