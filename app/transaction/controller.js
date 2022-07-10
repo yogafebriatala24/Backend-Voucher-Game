@@ -26,7 +26,6 @@ module.exports = {
     try {
       const { id } = req.params;
       const { status } = req.query;
-
       await Transaction.findByIdAndUpdate({ _id: id }, { status });
       req.flash("alertMessage", `Berhasil Ubah Status`);
       req.flash("alertStatus", "success");
